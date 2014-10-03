@@ -1,0 +1,4 @@
+Trying 192.168.1.128...
+Connected to fedortsyganov.
+Escape character is '^]'.
+ServerCountThrees Response: 31

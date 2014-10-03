@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<project name="test" default="compile" basedir=".">
+  <property name="src" value="."/>
+  <property name="build" value="build"/>
+  <target name="init">
+    <mkdir dir="${build}"/>
+  </target>
+  <target name="compile" depends="init">
+    <java classname="CountThrees">
+       <classpath path="/home/fedor/CountThreesJava" />
+    </java>
+    <java classname="ReadInt32BitLE">
+      <classpath path="/home/fedor/CountThreesJava" />
+    </java>
+    <javac includeantruntime="false" srcdir="/home/fedor/CountThreesJava" destdir="."/>
+  </target>
+</project>
