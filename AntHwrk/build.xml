@@ -8,11 +8,11 @@
   </target>
   <target name="compile" depends="init">
     <java classname="CountThrees">
-       <classpath path="/home/fedor/CountThreesJava" />
+       <classpath path="." />
     </java>
     <java classname="ReadInt32BitLE">
-      <classpath path="/home/fedor/CountThreesJava" />
+      <classpath path="." />
     </java>
-    <javac includeantruntime="false" srcdir="/home/fedor/CountThreesJava" destdir="."/>
+    <javac includeantruntime="false" srcdir="." destdir="."/>
   </target>
 </project>
